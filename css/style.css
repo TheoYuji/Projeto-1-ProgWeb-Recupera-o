@@ -1,0 +1,293 @@
+
+body {
+    font-family: Arial;
+    color: white;
+    background: #000000;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.cabeca{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 36px 56px;
+}
+
+.cabeca div+div{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.cabeca select{
+    background: transparent;
+    color: white;
+    padding: 6px 0 6px 30px;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.cabeça div.select{
+    display: inline-block;
+}
+
+.cabeca a{
+    background: red;
+    color: white;
+    font-size: 30px;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 80px;
+}
+
+.logo{
+    height: 1050px;
+    background: url("../imagens/Fundo.jpg") center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.logo-texto{
+    z-index: 1;
+    display: grid;
+    justify-items: center;
+}
+
+.logo h1{
+    font-size: 80px;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+.logo h2{
+    font-size: 40px;
+}
+
+.logo h3{
+    font-size: 30px;
+}
+
+.section{
+    border-top: 10px solid rgb(49, 49, 49);
+}
+
+.form-barra{
+    display: grid;
+    grid-template-columns: 800px 250px;
+}
+
+.form-barra input{
+    padding: 35px 15px;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.form-barra button{
+    background: red;
+    border: none;
+    color: white;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.transparencia{
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 40%,transparent 75%,rgba(0,0,0,.8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section {
+    background: black;
+    padding: 4rem 0;
+}
+
+.section h4{
+    font-size: 70px;
+}
+
+.section p{
+    font-size: 38px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-tv{
+    position: relative;
+}
+
+.img-tv img{
+    position: relative;
+    z-index: 1;
+}
+
+.video-tv{
+    position: absolute;
+    top: 95px;
+    left: 72px;
+
+}
+
+.assista .video-tv{
+    width: 415px;
+    top: 50px;
+    left: 110px;
+    right: 100px;
+}
+
+.baixe .grid > div:first-child {
+    order: 2;
+  }
+  
+.baixe .img-tv {
+    order: 1;
+  }
+
+.crie .grid > div:first-child {
+    order: 2;
+  }
+  
+.crie .img-tv {
+    order: 1;
+  }
+
+div.submenu{
+    padding: 70px 30px;
+}
+
+div.submenu h1{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+label.topico{
+    text-align: left;
+}
+
+div.perguntas{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+div.pergunta{
+    position: relative;
+    background-color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+}
+
+div.pergunta .topico{
+    display: block;
+    padding: 35px 30px;
+    border-bottom: 10px solid black;
+}
+
+div.pergunta div.conteudo{
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all;
+}
+
+div.pergunta input[type="checkbox"]{
+    display: none;
+}
+
+div.pergunta input[type="checkbox"]:checked ~ div.conteudo{
+    padding: 50px 50px;
+    max-height: 600px;
+}
+
+.botao{
+    display: grid;
+    justify-items: center;
+}
+
+.botao h5{
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 1px;
+}
+
+.form-barra2{
+    display: grid;
+    grid-template-columns: 800px 250px;
+    background-color: black;
+}
+
+.form-barra2 input{
+    padding: 35px 15px;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.form-barra2 button{
+    background: red;
+    border: none;
+    color: white;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer{
+    max-width: 70%;
+    margin: 200px auto;
+    margin: color black;
+    overflow: auto;
+    background-color: black;
+}
+
+.footer ,
+.footer a{
+    color: gray;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+    font-size: 23px;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li{
+    line-height: 2.4;
+    font-size: 20px;
+}
+
+.ultimo select{
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    padding: 25px 25px;
+    margin: 25px;
+}
+
+.footer h1{
+    font-size: 20px;
+}
+
